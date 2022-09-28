@@ -21,7 +21,7 @@ router.get('/statepark', ctrlTravel.statepark);
 router.get('/famousrestaurants', ctrlFood.famousrestaurants);
 router.get('/detailspage', ctrlFood.detailspage);
 
-// Controller - Attractions
+// Controller - Attractions 
 router.get('/topthingstodo', ctrlAttractions.topthingstodo);
 
 module.exports = router;
