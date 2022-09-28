@@ -14,7 +14,6 @@ router.get('/', ctrlOthers.home);
 router.get('/aboutus', ctrlOthers.aboutus);
 
 // Controller - Travel
-router.get('/nationalPark', ctrlTravel.nationalpark);
 router.get('/statepark', ctrlTravel.statepark);
 
 // Controller - Food
