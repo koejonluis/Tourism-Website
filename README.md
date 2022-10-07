@@ -1,8 +1,11 @@
 # Project Name: Tourism-Website
-
+This Project is live at ------> https://tourism-website.onrender.com
 
 ## *Description*: 
+<!--This project is based on how an effective travel website will make us feel. It is based on a travelling website with fully featured functions that will activate the travelling bug with vibrant imagery. This website contains highlights of some important places along with high quality photography and allow people to book their dream destination with in their budgets. It also includes full customer support, easy payment system, book as per your time choice, full virtual tour of place through different videos and images.-->
 
+## *OBJECTIVE*:
+THe goal of this project is to design and create a website using MEAN STACK technologies to provide insight into the beautiful state of New York and different attractions you can see there. 
 
 ## *Installation*: 
 How to install the project. NA Currently
@@ -16,7 +19,7 @@ Larger projects often have sections on contributing to their project, in which c
 ## *Credits*: 
 Jon Luis Koe [Github Profile](https://github.com/koejonluis)
 
-## *License*: 
-NA Currently
+## *Dependencies*: 
+The following dependencies can be found in [package.json](https://github.com/koejonluis/Tourism-Website/blob/7f9b309dc40bbec373e472f2e2824e1c7f0f3c9e/package.json):
 
 Version 1.0
