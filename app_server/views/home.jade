@@ -4,35 +4,104 @@ block content
   doctype html
   html(lang='en')
   head
-    meta(charset='UTF-8')
-    title  My Portfolio
-    link(rel='stylesheet', type='text/css', href='style.css')
-  // rgb red green blue hexadecimal 0-F
+      meta(charset='UTF-8')
+      title Jon&apos;s Travel Blog
+      link(rel='stylesheet', type='text/css', href='style.css')
   body
-    h1  Jon Luis Koe  
-    |  
-    h2
-      u About Me
-    p
-      | I&apos;m a Southwestern College student majoring in both Computer Science and Business Administration.
-    p
-      | Click the icon below to download My Resume!
-    h3  My Resume! 
-    a(href='JonLuisKoeResume.docx', download="JonLuisKoe's Resume")
-      img(src='WordIcon.png', alt='WordIcon', width='80', height='100')
-    |  
-    br
-    a(href='JonLuisKoeResume.docx', download="JonLuisKoe's Resume")
-      | Jon Luis Koe&apos;s Resume
-    p#feedback
-      label(for='review') Any feeback is appreciated:
-    textarea#review(name='review', rows='4', cols='50')
-      | Write your feedback here.
-    |  
-    br
-    input#labelfeedback(type='submit', value='submit')
-    h2
-      u Ongoing Projects
-    p  Here is my project which is a travel blog.
-    a(href='file:///C:/Users/JonLuis.Koe/.vscode/Homework%201%20FS/Travel%20Blog/index.html')
-      | link text
+    nav.navbar
+      a(href='#home')  Home
+      a(href='#aboutNY')  About NY
+      a(href='#food') Food
+      a(href='#attractions')  Attractions
+      a(href='#hotels')  Hotels
+      a(href='#contactus')  Contact Us
+  .details
+    | New York City comprises 5 boroughs sitting
+    | where the Hudson River meets the Atlantic Ocean.
+    | At its core is Manhattan, a densely populated borough
+    | that&apos;s among the world&apos;s major commercial, financial
+    | and cultural centers. Its iconic sites include
+    | skyscrapers such as the Empire State Building and
+    | sprawling Central Park. Broadway theater is staged
+    | in neon-lit Times Square
+
+  img(src="../pictures/statueofliberty.jpg", alt="Statue of Liberty")
+
+  h1.statueoflibery
+    | Statue of Liberty
+  .detailsofstatueofliberty
+    | "The Statue of Liberty Enlightening the World" was
+    | a gift of friendship from the people of France to
+    | the United States and is recognized as a universal
+    | symbol of freedom and democracy. The Statue of Liberty
+    | was dedicated on October 28, 1886.  It was designated
+    | as a National Monument in 1924.  Employees of the
+    | National Park Service have been caring for the colossal
+    | copper statue since 1933.
+  h1.centralpark
+    | Central Park
+  .detailsofcentralpark
+    | Central Park is an urban park in New York City located
+    | between the Upper West and Upper East Sides of
+    | Manhattan. It is the fifth-largest park in the city,
+    | covering 843 acres (341 ha). It is the most visited
+    | urban park in the United States, with an estimated 42
+    | million visitors annually as of 2016, and is the most
+    | filmed location in the world.
+  h2.mainattractions
+    | Main Attractions
+  ul
+    img.cherrypicture(src='C:/Users/JonLuis.Koe/.vscode/Homework 1 FS/My-Portfolio/pictures/central-park-cherry-blossoms.jpg')
+    li  Cherry Blossom Trees
+    .cherryblossomdetails
+      | In the springtime from April to May, the
+      | cherry blossom trees in Central Park
+      | attract nature lovers from all over the
+      | world. It's easy to see why, as the
+      | splendor of their blooms is as stunning
+      | as it is explosive. Full bloom of the
+      | cherry blossom trees is a sight to behold,
+      | and it's typically reached within a week
+      | after the first buds open.
+    img.alicepicture(src='C:/Users/JonLuis.Koe/.vscode/Homework 1 FS/My-Portfolio/pictures/alice.jpg')
+    li  Alice in Wonderland
+    .alicedetails
+      | Alice in Wonderland stands eleven feet
+      | tall in bronze, surrounded by the Mad
+      | Hatter, the White Rabbit and a few of her
+      | other friends.
+    img.wollmanrinkpicture(src='C:/Users/JonLuis.Koe/.vscode/Homework 1 FS/My-Portfolio/pictures/wollmanrink.jpg')
+    li  Ice Skating at Wollman Rink
+    .wollmandetais
+      | Opened in 1949, Wollman Rink has been a
+      | favorite attraction of Central Park for decades.
+      | Ice skating in fall and winter is one of the
+      | most popular things to do among New Yorkers and
+      | tourists alike.
+  h1.hellskitchen
+    | Hell's Kitchen
+  h2.famousrestaurants
+    | Famous Restaurants
+  ol
+    li  Kochi 
+    .koshidetails
+      | Grilled skewers have reached a Harry
+      | Styles-level of popularity at restaurants
+      | around NYC, and Kochi is the best place to
+      | get them in Hell&apos;s Kitchen. This Korean spot
+      | serves a $135 tasting menu with skewers
+      | ranging from crispy monkfish to confit duck
+      | with tomato marmalade, and they&apos;re all
+      | delicious. Sit at the long bar with a date
+      | and watch the chefs prepare all nine courses
+      | in front of you.
+    li  Torishin 
+    .torishin
+      | There are many ways to enjoy a meal at ToriShin.
+      | You can order à la carte skewers, do a chef&apos;s
+      | tasting, or sit in a private room alone with a
+      | chef who will make you a meal so special that
+      | you&apos;ll daydream about chicken parts for weeks to
+      | come. But no matter what you choose, you&apos;ll find
+      | some memorable chicken skewers at this yakitori
+      | spot on 53rd street.
