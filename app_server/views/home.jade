@@ -1,5 +1,38 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  doctype html
+  html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title  My Portfolio
+    link(rel='stylesheet', type='text/css', href='style.css')
+  // rgb red green blue hexadecimal 0-F
+  body
+    h1  Jon Luis Koe  
+    |  
+    h2
+      u About Me
+    p
+      | I&apos;m a Southwestern College student majoring in both Computer Science and Business Administration.
+    p
+      | Click the icon below to download My Resume!
+    h3  My Resume! 
+    a(href='JonLuisKoeResume.docx', download="JonLuisKoe's Resume")
+      img(src='WordIcon.png', alt='WordIcon', width='80', height='100')
+    |  
+    br
+    a(href='JonLuisKoeResume.docx', download="JonLuisKoe's Resume")
+      | Jon Luis Koe&apos;s Resume
+    p#feedback
+      label(for='review') Any feeback is appreciated:
+    textarea#review(name='review', rows='4', cols='50')
+      | Write your feedback here.
+    |  
+    br
+    input#labelfeedback(type='submit', value='submit')
+    h2
+      u Ongoing Projects
+    p  Here is my project which is a travel blog.
+    a(href='file:///C:/Users/JonLuis.Koe/.vscode/Homework%201%20FS/Travel%20Blog/index.html')
+      | link text

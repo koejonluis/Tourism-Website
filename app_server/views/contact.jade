@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    doctype html
+    html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Jon&apos;s Travel Blog
+        link(rel='stylesheet', type='text/css', href='style.css')
+    body
+        form(action='/action_page.php', target='_blank')
+        label(for='name')  Name:     
+        input#name(type='text')
+        |  
+        br
+        br
+        label(for='email')  Email:    
+        input#email(type='text')
+        |  
+        br
+        br
+        label(for='phone')  Phone Number:    
+        input#phone(type='text')
+        |  
+        br
+        br
+        label(for='password')  Password    
+        input#password(type='text')
+        |  
+        br
+        br
+        label(for='files') Select files:
+        input#files(type='file', name='files', multiple='')
+        br
+        br
+        input(type='submit', value='submit')
