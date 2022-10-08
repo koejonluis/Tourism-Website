@@ -1,7 +1,7 @@
 # Project Name: Tourism-Website
 This Project is live at ------> https://tourism-website.onrender.com
 
-![Welcome NY](pictures/new-york-city-letters-concept-word-new-york-written-different-pictures-place-110467591.jpg)
+![Welcome NY](pictures/New-York-City-Backgrounds-HD-Free-Download-Images.png)
 
 ## *Description*: 
 <!--This project is based on how an effective travel website will make us feel. It is based on a travelling website with fully featured functions that will activate the travelling bug with vibrant imagery. This website contains highlights of some important places along with high quality photography and allow people to book their dream destination with in their budgets. It also includes full customer support, easy payment system, book as per your time choice, full virtual tour of place through different videos and images.-->
