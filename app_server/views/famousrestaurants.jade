@@ -1,5 +1,102 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  doctype html
+  html(lang='en')
+  head
+      meta(charset='UTF-8')
+      title Jon&apos;s Travel Blog
+      link(rel='stylesheet', type='text/css', href='style.css')
+  body
+    nav.navbar
+      a(href='#home')  Home
+      a(href='#aboutNY')  About NY
+      a(href='#food') Food
+      a(href='#attractions')  Attractions
+      a(href='#hotels')  Hotels
+      a(href='#contactus')  Contact Us
+    h1.famousrestaurants
+      | Famous Restaurants
+    div
+      | New York City is home to some of the most lauded
+      | iconic restaurants in the world. The best
+      | restaurants in NYC represent a rainbow of cuisines
+      | and approaches, with new restaurants popping up and
+      | generating buzz on a regular basis. We’re lucky like
+      | that: New Yorkers always have something new and
+      | exciting to try. But it’s the old favorites,
+      | those beloved spots that have stood the test of
+      | time, serving generations of fans, that have become
+      | known as the most famous restaurants in the city.
+      | These restaurants are classics, spots that
+      | everyone—both locals and visitors—should try at
+      | least once. They include steakhouses, delis and
+      | pizza joints (the best pizza in the U.S. in fact),
+      | all of them classically New York.
+    ul.restaurantlist
+      li.katz
+        a(href='https://katzsdelicatessen.com/')
+          | Katz’s Delicatessen
+      div
+        | This cavernous cafeteria is a repository
+        | of New York history—glossies of celebs spanning
+        | the past century crowd the walls, and the
+        | classic Jewish deli offerings are nonpareil.
+        | Start with a snappy, all-beef hot dog, then flag
+        | down a meat cutter and order a legendary
+        | sandwich. The brisket sings with horseradish,
+        | and the thick-cut pastrami stacked high between
+        | slices of rye is the stuff of dreams.
+      li.petersteak
+        a(href='https://peterluger.com/')
+          | Peter Luger SteakHouse
+      div
+        | Although a slew of Luger copycats have prospered
+        | in the last several years, none have captured the
+        | elusive charm of this beer-hall style eatery, with
+        | well-worn wooden floors and tables, and waiters in
+        | waistcoats and bow ties. Excess is the thing, like
+        | the famous porterhouse for two, which is 44 ounces of
+        | sliced prime beef. Go for it all—it’s a singular New
+        | York experience that’s worth having. And for the
+        | first time in over 130 years, you can now order
+        | takeout and delivery from the famed restaurant.
+      li.rao
+        a(href='http://www.raosrestaurants.com/')
+          | Rao
+      div
+        | To eat at Rao’s, a Southern Italian dining room
+        | that's operated in East Harlem since 1896, you’ll
+        | need a personal invite from one of the heavy hitters
+        | who “owns” a table. CEOs, actors, politicians,
+        | news personalities and neighborhood old-timers have
+        | a long-standing arrangement with legendary owner
+        | Frankie “No” Pellegrino, and that's what ensures a
+        | seat at one of the ten tables. If you just can’t
+        | shake your craving for their infamous red sauce,
+        | you’re in luck: they now offer takeout and delivery.
+      li.mari
+        a(href='https://marinyc.com/')
+          | Mari
+      div
+        | This Korean spot from the Kochi team serves a $135,
+        | 12-course tasting, the bulk of which is dedicated to
+        | U-shaped hand rolls filled with marinated meat or
+        | fish topped with crunchy accessories like pickled
+        | daikon. Unlike some handroll places you may have been
+        | to before—like Nami Nori or DomoDomo—Mari
+        | incorporates Korean sauces and spices into every
+        | two-bite roll. There are a couple tables in the back,
+        | but you should sit at the big rectangular counter in
+        | the middle of the restaurant.
+      li.torishin
+        a(href='http://www.torishinny.com/')
+          | Torishin
+      div
+        | There are many ways to enjoy a meal at ToriShin.
+        | You can order à la carte skewers, do a chef’s tasting,
+        | or sit in a private room alone with a chef who will
+        | make you a meal so special that you’ll daydream about
+        | chicken parts for weeks to come. But no matter what you
+        | choose, you’ll find some memorable chicken skewers at
+        | this yakitori spot on 53rd street.
