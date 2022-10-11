@@ -1,7 +1,12 @@
-module.exports.famousrestaurants = function(req, res){
+const famousrestaurants = function(req, res){
     res.render('famousrestaurants', { title: 'Famous Restsurants' });
 };
 
-module.exports.detailspage = function(req, res){
+const detailspage = function(req, res){
     res.render('detailspage', { title: 'Details of Famous Restaurant' });
+};
+
+module.exports = {
+    famousrestaurants,
+    detailspage
 };

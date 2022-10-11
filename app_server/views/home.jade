@@ -5,16 +5,20 @@ block content
   html(lang='en')
   head
       meta(charset='UTF-8')
-      title Jon&apos;s Travel Blog
-      link(rel='stylesheet', type='text/css', href='style.css')
-  body
+      title Home Page
+      link(rel='stylesheet', type='text/css', href='/stylesheets/stylehome.css')
+  header
     nav.navbar
       a(href='#home')  Home
-      a(href='#aboutNY')  About NY 
+      |  
+      a(href='#aboutNY')  About NY
+      |  
       a(href='#food') Food
       a(href='#attractions')  Attractions
       a(href='#hotels')  Hotels
       a(href='#contactus')  Contact Us
+  body
+    a.btn.btn-primary.float-right(href='/location/review/new')
   .details
     | New York City comprises 5 boroughs sitting
     | where the Hudson River meets the Atlantic Ocean.
@@ -25,11 +29,11 @@ block content
     | sprawling Central Park. Broadway theater is staged
     | in neon-lit Times Square
 
-  img(src="/public/assets/statueofliberty.jpg", alt="Statue of Liberty")
+    img(src="/images/statueofliberty.jpg", alt="Statue of Liberty")
 
   h1.statueoflibery
     | Statue of Liberty
-  .detailsofstatueofliberty
+  .detailsofstatueofliberty 
     | "The Statue of Liberty Enlightening the World" was
     | a gift of friendship from the people of France to
     | the United States and is recognized as a universal
