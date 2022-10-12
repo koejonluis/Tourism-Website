@@ -5,18 +5,21 @@ block content
     html(lang='en')
     head
         meta(charset='UTF-8')
-        title Jon&apos;s Travel Blog
+        title Contact Page
         link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
     header
+        a.logo(href='#')
+            span T
+            | ravel
         nav.navbar
-        a(href='#home')  Home
-        |  
-        a(href='#aboutNY')  About NY
-        |  
-        a(href='#food') Food
-        a(href='#attractions')  Attractions
-        a(href='#hotels')  Hotels
-        a(href='#contactus')  Contact Us
+            a(href='/')  Home
+            |  
+            a(href='/aboutus')  About NY
+            |  
+            a(href='/famousrestaurants') Food
+            a(href='/topthingstodo')  Attractions
+            a(href='#hotels')  Hotels
+            a(href='/contact')  Contact Us
     body
         form(action='/action_page.php', target='_blank')
         label(for='name')  Name:     
