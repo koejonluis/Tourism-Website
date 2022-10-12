@@ -8,6 +8,9 @@ block content
       title Home Page
       link(rel='stylesheet', type='text/css', href='/stylesheets/stylehome.css')
   header
+    a.logo(href='#')
+      span T
+      | ravel
     nav.navbar
       a(href='#home')  Home
       |  
@@ -17,6 +20,13 @@ block content
       a(href='#attractions')  Attractions
       a(href='#hotels')  Hotels
       a(href='#contactus')  Contact Us
+    //- .icons
+    //-   i#search-btn.fas.fa-search
+    //-   i#login-btn.fas.fa-user
+    //- form.search-bar-container(action='')
+      //- input#search-bar(type='search' placeholder='search here...')
+    //-   label.fas.fa-search(for='search-bar')
+
   body
     a.btn.btn-primary.float-right(href='/location/review/new')
   .details
@@ -29,7 +39,7 @@ block content
     | sprawling Central Park. Broadway theater is staged
     | in neon-lit Times Square
 
-    img(src="/images/statueofliberty.jpg", alt="Statue of Liberty")
+    img(src="/images/statueofliberty.jpg", alt="Statue of Liberty", width="671", height="466")
 
   h1.statueoflibery
     | Statue of Liberty
@@ -55,7 +65,7 @@ block content
   h2.mainattractions
     | Main Attractions
   ul
-    img.cherrypicture(src='C:/Users/JonLuis.Koe/.vscode/Homework 1 FS/My-Portfolio/pictures/central-park-cherry-blossoms.jpg')
+    img.cherrypicture(src='/images/central-park-cherry-blossoms.jpg', width="900", height="506")
     li  Cherry Blossom Trees
     .cherryblossomdetails
       | In the springtime from April to May, the
@@ -67,14 +77,14 @@ block content
       | cherry blossom trees is a sight to behold,
       | and it's typically reached within a week
       | after the first buds open.
-    img.alicepicture(src='C:/Users/JonLuis.Koe/.vscode/Homework 1 FS/My-Portfolio/pictures/alice.jpg')
+    img.alicepicture(src='/images/alice.jpg', width="900", height="506")
     li  Alice in Wonderland
     .alicedetails
       | Alice in Wonderland stands eleven feet
       | tall in bronze, surrounded by the Mad
       | Hatter, the White Rabbit and a few of her
       | other friends.
-    img.wollmanrinkpicture(src='C:/Users/JonLuis.Koe/.vscode/Homework 1 FS/My-Portfolio/pictures/wollmanrink.jpg')
+    img.wollmanrinkpicture(src='/images/wollmanrink.jpg', width="900", height="506")
     li  Ice Skating at Wollman Rink
     .wollmandetais
       | Opened in 1949, Wollman Rink has been a
