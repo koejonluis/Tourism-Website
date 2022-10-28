@@ -20,13 +20,6 @@ block content
       a(href='/topthingstodo')  Attractions
       a(href='#hotels')  Hotels
       a(href='/contact')  Contact Us
-    //- .icons
-    //-   i#search-btn.fas.fa-search
-    //-   i#login-btn.fas.fa-user
-    //- form.search-bar-container(action='')
-      //- input#search-bar(type='search' placeholder='search here...')
-    //-   label.fas.fa-search(for='search-bar')
-
   body
     a.btn.btn-primary.float-right(href='/location/review/new')
   .details
@@ -39,7 +32,12 @@ block content
     | sprawling Central Park. Broadway theater is staged
     | in neon-lit Times Square
 
-    img(src="/images/statueofliberty.jpg", alt="Statue of Liberty", width="671", height="466")
+  .video
+    video(width='500', height='400', autoplay='')
+      source(src='/videos/Statue Of Liberty - 1536.mp4', type='video/mp4')
+      |       Your browser does not support the video tag.
+
+  img(src="/images/statueofliberty.jpg", alt="Statue of Liberty", width="671", height="466")
 
   h1.statueoflibery
     | Statue of Liberty
