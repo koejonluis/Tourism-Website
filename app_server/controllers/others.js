@@ -7,12 +7,12 @@ const aboutus = function(req, res){
     res.render('aboutus', { title: 'About Us' });
 };
 
-const contact = function(req, res){
+const contactus = function(req, res){
     res.render('contact', { title: 'Contact Form' });
 };
 
 module.exports = {
     home,
     aboutus,
-    contact
+    contactus
 };

@@ -23,7 +23,6 @@ mongoose.connection.on('disconnected', () => {
 
 
 require('./locations');
-
 require('./hotels');
 require('./reservations');
 require('./users')

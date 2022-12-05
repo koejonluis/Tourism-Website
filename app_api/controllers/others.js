@@ -4,8 +4,17 @@ const aboutus = (req, res) => { };
 
 const contact = (req, res) => { };
 
+const getDetails = (req, res) => { };
+
+const createNewAccount = (req, res) => { };
+
+const deleteAccount = (req, res) => { };
+
 module.exports = {
     home,
     aboutus,
-    contact
+    contact,
+    getDetails,
+    createNewAccount,
+    deleteAccount
 };

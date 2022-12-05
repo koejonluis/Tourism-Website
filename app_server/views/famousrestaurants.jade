@@ -8,7 +8,7 @@ block content
       title Famous Restaurants
       link(rel='stylesheet', type='text/css', href='/stylesheets/stylefamous.css')
   header
-    a.logo(href='#')
+    a.logo(href='/')
       span T
       | ravel
     nav.navbar
@@ -18,8 +18,8 @@ block content
       |  
       a(href='/famousrestaurants') Food
       a(href='/topthingstodo')  Attractions
-      a(href='#hotels')  Hotels
-      a(href='/contact')  Contact Us
+      a(href='/hotels')  Hotels
+      a(href='/contactus')  Contact Us
   body
     h1.famousrestaurants
       | Famous Restaurants
@@ -106,3 +106,24 @@ block content
         | chicken parts for weeks to come. But no matter what you
         | choose, you’ll find some memorable chicken skewers at
         | this yakitori spot on 53rd street.
+  .footer-container
+    .footer
+      img.footerlogo(src='/images/logo.png')
+        //- <div class="footer-heading footer-1">
+        //- <h2> About Us</h2>
+        //- </div>
+      .footer-heading.footer-2
+        h2  Contact Us
+        a(href='#')  Jobs 
+        a(href='#')  Support 
+        a(href='#')  Contact 
+        a(href='#')  Sponsorships 
+      .footer-heading.footer-3
+        h2  Social Media
+        a(href='#')  Instagram 
+        a(href='#')  Facebook 
+        a(href='#')  Twitter 
+      .footer-email-form
+        h2  Join Our Newsletter 
+        input#footer-email(type='email', placeholder='Enter your email address')
+        input#footer-email-btn(type='submit', value='Sign Up')

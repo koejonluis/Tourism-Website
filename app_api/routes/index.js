@@ -6,9 +6,8 @@ const ctrlTravel = require('../controllers/travel')
 const ctrlOthers = require('../controllers/others')
 const ctrlFood = require('../controllers/food')
 const ctrlAttractions = require('../controllers/attractions')
-
 const ctrlLocations = require('../controllers/locations')
-const ctrlLogIn = require('../controllers/login')
+
 
 
 /* 
@@ -18,35 +17,47 @@ Put - update a specific review
 Delete - delete a specific review
 */
 
-// Cpntroller - Locations
+// Controller - Locations
 router 
     .route('/locations')
-    // .get(ctrlLocations.listofLocations)
-    // .post(ctrlLocations.locationsCreate);
-
-router
-    .route('/login')
-    // .get(ctrlLogIn.getDetails)
-    // .post(ctrlLogIn.createNewAccount)
-    // .delete(ctrlLogIn.deleteAccount)
+        .get(ctrlLocations.listofLocations)
+        .post(ctrlLocations.locationsCreate);
 
 // Ratings
 router 
     .route('/locations/ratings')
-    // .get(ctrlLocations.locationRatings)
-    // .post(ctrlLocations.createNewRating)
-    // .put(ctrlLocations.updateRating)
-    // .delete(ctrlLocations.deleteRating)
+        .get(ctrlLocations.locationRatings)
+        .post(ctrlLocations.createNewRating)
+        .put(ctrlLocations.updateRating)
+        .delete(ctrlLocations.deleteRating)
 
-// Controller - Travel
-router
-    .route('/travel')
-    .get(ctrlTravel.statepark);
+
 
 
 // Controller - Others
 router.
     route('/')
-    .get(ctrlOthers.home);
+        .get(ctrlOthers.home);
+
+router.
+    route('/aboutus')
+        .get(ctrlOthers.aboutus);
+
+router.
+    route('contact')
+        .get(ctrlOthers.contact)
+
+router
+    .route('/login')
+        .get(ctrlOthers.getDetails)
+        .post(ctrlOthers.createNewAccount)
+        .delete(ctrlOthers.deleteAccount)
+
+
+// Controller - Travel
+router
+    .route('/travel')
+        .get(ctrlTravel.statepark);
+
 
 module.exports = router;

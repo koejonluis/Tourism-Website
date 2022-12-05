@@ -1,0 +1,72 @@
+extends layout
+
+block content
+    doctype html
+    html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Contact Page
+        link(rel='stylesheet', type='text/css', href='/stylesheets/stylecontact.css')
+    header
+        a.logo(href='/')
+        span T
+        | ravel
+        nav.navbar
+        a(href='/')  Home
+        |  
+        a(href='/aboutus')  About NY
+        |  
+        a(href='/famousrestaurants') Food
+        a(href='/topthingstodo')  Attractions
+        a(href='/hotels')  Hotels
+        a(href='/contactus')  Contact Us
+
+    body
+        form(action='/action_page.php', target='_blank')
+        label(for='name')  Name:     
+        input#name(type='text')
+        |  
+        br
+        br
+        label(for='email')  Email:    
+        input#email(type='text')
+        |  
+        br
+        br
+        label(for='phone')  Phone Number:    
+        input#phone(type='text')
+        |  
+        br
+        br
+        label(for='password')  Password    
+        input#password(type='text')
+        |  
+        br
+        br
+        label(for='files') Select files:
+        input#files(type='file', name='files', multiple='')
+        br
+        br
+        input(type='submit', value='submit')
+        
+    .footer-container
+        .footer
+            img.footerlogo(src='/images/logo.png')
+            //- <div class="footer-heading footer-1">
+            //- <h2> About Us</h2>
+            //- </div>
+        .footer-heading.footer-2
+            h2  Contact Us
+            a(href='#')  Jobs 
+            a(href='#')  Support 
+            a(href='#')  Contact 
+            a(href='#')  Sponsorships 
+        .footer-heading.footer-3
+            h2  Social Media
+            a(href='#')  Instagram 
+            a(href='#')  Facebook 
+            a(href='#')  Twitter 
+        .footer-email-form
+            h2  Join Our Newsletter 
+            input#footer-email(type='email', placeholder='Enter your email address')
+            input#footer-email-btn(type='submit', value='Sign Up')

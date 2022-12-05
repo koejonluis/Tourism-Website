@@ -3,125 +3,224 @@ extends layout
 block content
   doctype html
   html(lang='en')
-  head
+    head
       meta(charset='UTF-8')
       title Home Page
       link(rel='stylesheet', type='text/css', href='/stylesheets/stylehome.css')
-  header
-    a.logo(href='#')
-      span T
-      | ravel
-    nav.navbar
-      a(href='/')  Home
-      |  
-      a(href='/aboutus')  About NY
-      |  
-      a(href='/famousrestaurants') Food
-      a(href='/topthingstodo')  Attractions
-      a(href='#hotels')  Hotels
-      a(href='/contact')  Contact Us
-  body
-    a.btn.btn-primary.float-right(href='/location/review/new')
-  .section
-    h1 Welcome to New York
-    .video-container
-    .color-overlay
-      video(id="background-video", autoplay='', loop='', muted='', type='video/mp4')
-        source(src='/videos/Statue Of Liberty - 1536.mp4', type='video/mp4')
-          Your browser does not support the video tag.
+    body
+      header
+        img.nylogo(src='/images/logo.png')
+        a.logo(href='/')
+          span T
+          | ravel
+        nav.navbar
+          a(href='#home')  Home
+          a(href='#aboutNY')  About NY
+          a(href='#food') Food
+          a(href='#attractions')  Attractions
+          a(href='#hotels')  Hotels
+          a(href='#contactus')  Contact Us
+        .icons
+          i#search-btn.fas.fa-search
+          i#login-btn.fas.fa-user
+        form.search-bar-container(action='')
+          input#search-bar(type='search', placeholder='search here...')
+          label.fas.fa-search(for='search-bar')
+      section#home.home
+        .content
+          h3 Welcome to New York
+          p Discover new, wonderful, and interesting places with us
+          a.btn(href='#')  Discover More 
+        .controls
+          span.vid-btn.active(data-src='/videos/vid-3.mp4')
+          span.vid-btn(data-src='/videos/vid-4.mp4')
+          span.vid-btn(data-src='/videos/vid-3.mp4')
+          span.vid-btn(data-src='/videos/vid-4.mp4')
+        .video-container
+          video#video-slider(src='/videos/Statue Of Liberty - 1536.mp4', loop='', autoplay='', muted='')
+   
+      section#packages.packages
+        h1.heading
+          span L
+          span O
+          span C
+          span A
+          span T
+          span I
+          span O
+          span N
+          span S
+        .box-container
+          .box
+            img(src='/images/statueofliberty.jpg', alt='')
+            .content
+              h3
+                i.fas.fa-map-marker-alt
+                |  Statue of Liberty
+              p
+                | "The Statue of Liberty Enlightening the World" was a gift of friendship from the people of France to the United States and is recognized as a universal symbol of freedom and democracy.
+              .stars
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+              .price
+                | $90.00 
+                span $120.00
+              a.btn(href='#') Visit Now!
+          .box
+            img(src='/images/central-park-cherry-blossoms.jpg', alt='')
+            .content
+              h3
+                i.fas.fa-map-marker-alt
+                |  Cherry Blossoms at Central Park
+              p
+                | In the springtime from April to May, the cherry blossom trees in Central Park attract nature lovers from all over the world.                                                                                                                        
+              .stars
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+              .price  FREE! 
+              a.btn(href='#') Visit Now!
+          .box
+            img(src='/images/wollmanrink.jpg', alt='')
+            .content
+              h3
+                i.fas.fa-map-marker-alt
+                |  Ice Skating at Wollman Rink
+              p
+                | Ice skating in fall and winter is one of the most popular things to do among New Yorkers and tourists alike.                                                                                                                                                                                                
+              .stars
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+              .price  FREE! 
+              a.btn(href='#') Visit Now!
+          .box
+            img(src='/images/americanmuseumofnaturalhistory.jpg', alt='')
+            .content
+              h3
+                i.fas.fa-map-marker-alt
+                |  American Museum of Natural History
+              p
+                | Since its founding in 1869, the American Museum of Natural History has collected more than 33 million specimens relating to the natural world and human cultures. Come and Explore!
+              .stars
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+              .price
+                | $25.00 
+                span $40.00
+              a.btn(href='#') Book Now!
+          .box
+            img(src='/images/torishin.jpg', alt='')
+            .content
+              h3
+                i.fas.fa-map-marker-alt
+                |  Torishin
+              p
+                | Torishin is the only really authentic Yakitori specialty restaurant in the U.S.A. Don't miss out!                                                                                                                                                                                                                                
+              .stars
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+              .price
+                | $30.00 
+                span $50.00
+              a.btn(href='#') Reserve Now!
+          .box
+            img(src='/images/kochi.jpg', alt='')
+            .content
+              h3
+                i.fas.fa-map-marker-alt
+                |  Kochi
+              p
+                | KOCHI -Korean for ‘skewer’- offers a nine-course tasting menu of skewered dishes inspired by traditional Korean cuisine that’s built around seasonality and balance. Make a Reservation with us now!
+              .stars
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.fas.fa-star
+                i.far.fa-star
+              .price
+                | $25.00 
+                span $40.00
+              a.btn(href='#') Reserve Now!
+      section#gallery.gallery
+        h1.heading
+          span E
+          span X
+          span P
+          span L
+          span O
+          span R
+          span E
+        .box-container
+          .box
+            img(src='/images/niagarafalls.jpg', alt='')
+            .content
+              h3 Niagara Falls
+              p The World Greatest Waterfall!
+              a.btn(href='#') Explore more!
+          .box
+            img(src='/images/adirondacks.jpg', alt='')
+            .content
+              h3 Adironacks Mountains
+              p Prepare to be wowed by crystal blue waters and sweeping mountain views.
+              a.btn(href='#') Explore more!
+          .box
+            img(src='/images/fingerlakes.jpg', alt='')
+            .content
+              h3 The Finger Lakes
+              p Glacial lakes, scenic drives and hiking! A good place to relax.
+              a.btn(href='#') Explore more!
+          .box
+            img(src='/images/fireisland.jpg', alt='')
+            .content
+              h3 Fire Island
+              p Create new memories by exploring the sand dunes on this island!
+              a.btn(href='#') Explore more!
+          .box
+            img(src='/images/empirestatebuilding.jpg', alt='')
+            .content
+              h3 Empire State Building
+              p Construction was completed in a record-breaking 1 year and 45 days. Visit now!
+              a.btn(href='#') Explore more!
+          .box
+            img(src='/images/stpatrickcathedral.jpg', alt='')
+            .content
+              h3 St Patrick's Cathedral
+              p A Beacon of hope for those who share the Catholic faith.
+              a.btn(href='#') Explore more!
 
-  .details
-    | New York City comprises 5 boroughs sitting
-    | where the Hudson River meets the Atlantic Ocean.
-    | At its core is Manhattan, a densely populated borough
-    | that&apos;s among the world&apos;s major commercial, financial
-    | and cultural centers. Its iconic sites include
-    | skyscrapers such as the Empire State Building and
-    | sprawling Central Park. Broadway theater is staged
-    | in neon-lit Times Square
-
-  .video
-    video(width='500', height='400', autoplay='')
-      source(src='/videos/Statue Of Liberty - 1536.mp4', type='video/mp4')
-      |       Your browser does not support the video tag.
-
-  img(src="/images/statueofliberty.jpg", alt="Statue of Liberty", width="671", height="466")
-
-  h1.statueoflibery
-    | Statue of Liberty
-  .detailsofstatueofliberty 
-    | "The Statue of Liberty Enlightening the World" was
-    | a gift of friendship from the people of France to
-    | the United States and is recognized as a universal
-    | symbol of freedom and democracy. The Statue of Liberty
-    | was dedicated on October 28, 1886.  It was designated
-    | as a National Monument in 1924.  Employees of the
-    | National Park Service have been caring for the colossal
-    | copper statue since 1933.
-  h1.centralpark
-    | Central Park
-  .detailsofcentralpark
-    | Central Park is an urban park in New York City located
-    | between the Upper West and Upper East Sides of
-    | Manhattan. It is the fifth-largest park in the city,
-    | covering 843 acres (341 ha). It is the most visited
-    | urban park in the United States, with an estimated 42
-    | million visitors annually as of 2016, and is the most
-    | filmed location in the world.
-  h2.mainattractions
-    | Main Attractions
-  ul
-    img.cherrypicture(src='/images/central-park-cherry-blossoms.jpg', width="900", height="506")
-    li  Cherry Blossom Trees
-    .cherryblossomdetails
-      | In the springtime from April to May, the
-      | cherry blossom trees in Central Park
-      | attract nature lovers from all over the
-      | world. It's easy to see why, as the
-      | splendor of their blooms is as stunning
-      | as it is explosive. Full bloom of the
-      | cherry blossom trees is a sight to behold,
-      | and it's typically reached within a week
-      | after the first buds open.
-    img.alicepicture(src='/images/alice.jpg', width="900", height="506")
-    li  Alice in Wonderland
-    .alicedetails
-      | Alice in Wonderland stands eleven feet
-      | tall in bronze, surrounded by the Mad
-      | Hatter, the White Rabbit and a few of her
-      | other friends.
-    img.wollmanrinkpicture(src='/images/wollmanrink.jpg', width="900", height="506")
-    li  Ice Skating at Wollman Rink
-    .wollmandetais
-      | Opened in 1949, Wollman Rink has been a
-      | favorite attraction of Central Park for decades.
-      | Ice skating in fall and winter is one of the
-      | most popular things to do among New Yorkers and
-      | tourists alike.
-  h1.hellskitchen
-    | Hell's Kitchen
-  h2.famousrestaurants
-    | Famous Restaurants
-  ol
-    li  Kochi 
-    .koshidetails
-      | Grilled skewers have reached a Harry
-      | Styles-level of popularity at restaurants
-      | around NYC, and Kochi is the best place to
-      | get them in Hell&apos;s Kitchen. This Korean spot
-      | serves a $135 tasting menu with skewers
-      | ranging from crispy monkfish to confit duck
-      | with tomato marmalade, and they&apos;re all
-      | delicious. Sit at the long bar with a date
-      | and watch the chefs prepare all nine courses
-      | in front of you.
-    li  Torishin 
-    .torishin
-      | There are many ways to enjoy a meal at ToriShin.
-      | You can order à la carte skewers, do a chef&apos;s
-      | tasting, or sit in a private room alone with a
-      | chef who will make you a meal so special that
-      | you&apos;ll daydream about chicken parts for weeks to
-      | come. But no matter what you choose, you&apos;ll find
-      | some memorable chicken skewers at this yakitori
-      | spot on 53rd street.
+    .footer-container
+      .footer
+        img.footerlogo(src='/images/logo.png')
+        //
+          <div class="footer-heading footer-1">
+          <h2> About Us</h2>
+          </div>
+        .footer-heading.footer-2
+          h2  Contact Us
+          a(href='#')  Jobs 
+          a(href='#')  Support 
+          a(href='#')  Contact 
+          a(href='#')  Sponsorships 
+        .footer-heading.footer-3
+          h2  Social Media
+          a(href='#')  Instagram 
+          a(href='#')  Facebook 
+          a(href='#')  Twitter 
+        .footer-email-form
+          h2  Join Our Newsletter 
+          input#footer-email(type='email', placeholder='Enter your email address')
+          input#footer-email-btn(type='submit', value='Sign Up')

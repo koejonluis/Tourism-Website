@@ -12,7 +12,7 @@ var ctrlAttractions = require('../controllers/attractions')
 // Controller - Others
 router.get('/', ctrlOthers.home);
 router.get('/aboutus', ctrlOthers.aboutus);
-router.get('/contact', ctrlOthers.contact);
+router.get('/contactus', ctrlOthers.contactus);
 
 // Controller - Travel
 router.get('/statepark', ctrlTravel.statepark);
